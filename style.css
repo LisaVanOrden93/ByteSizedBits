@@ -1,0 +1,122 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column; 
+            background-color: #f4f4f9;
+        }
+        .cv-container {
+            flex: 1; 
+            display: grid;
+            grid-template-columns: 1fr 3fr; 
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: 100%; 
+        }
+        .sidebar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            overflow-y: auto; 
+        }
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .linkedin-app-white-icon { 
+            width: 70px !important;  
+            height: 70px !important;  
+            display: inline-block; 
+            margin: 10px auto;  
+            object-fit: contain; 
+            border-radius: 0px; 
+        }            
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .sidebar p, .sidebar ul {
+            font-size: 14px;
+            margin: 15px 0;
+            line-height: 1.8; 
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li ul {
+            margin-top: 10px; 
+            margin-bottom: 12px; 
+            margin-left: 20px;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+            overflow-y: auto;
+        }
+        .content h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .content ul {
+            list-style-type: square;
+            padding-left: 10px;
+        }
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr; 
+            }
+            .sidebar {
+                text-align: left;
+                padding: 15px;
+            }
+            .sidebar img {
+                width: 100px;
+                height: 100px;
+            }
+            .sidebar h1 {
+                font-size: 20px;
+            }
+            .sidebar p, .sidebar ul {
+                font-size: 12px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 18px;
+            }
+            .content ul {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar img {
+                width: 80px;
+                height: 80px;
+            }
+            .sidebar h1 {
+                font-size: 18px;
+            }
+            .sidebar p, .sidebar ul {
+                font-size: 11px;
+            }
+            .content {
+                padding: 10px;
+            }
+            .content h2 {
+                font-size: 16px;
+            }
+            .content ul {
+                font-size: 12px;
+            }
+        }
